@@ -1,4 +1,5 @@
 :root {
+    --Rosat: #ffc3c3dc;
     --Rosaf: #ffc3c3;
     --Rosa: #ffdcdc;
     --Blanco: #ffffff;
@@ -6,18 +7,19 @@
     --Gris: #bebebe;
     --Dorado: #D4AF37;
 }
+html {
+    background-color: var(--Rosa);
+    font-family: 'Nunito Sans', sans-serif;
+    transition-duration: all 0.5s
+}
 #F video {
+    height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     height:100%;
     z-index: -101;
   }
-html {
-    background-color: var(--Rosa);
-    font-family: 'Nunito Sans', sans-serif;
-    transition-duration: all 0.5s
-}
 #in {
     height: 10vh;
 }
@@ -36,7 +38,7 @@ nav {
     border-bottom: 0.4vh solid var(--Rosa);
     display: flex;
     padding: 1vw;
-    background-color: var(--Rosaf);
+    background-color: var(--Rosat);
     justify-content: center;
     
 }
@@ -83,8 +85,10 @@ nav a {
 }
 @media screen and (max-width: 500px) {
     nav {
-        margin-top: -33vh;
-        padding: 3vw;
+        margin-top: -33.5vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 3.5vw;
         width: 90vw;
     }
     nav a {
@@ -103,6 +107,7 @@ nav a {
         margin-top: 5vh;
     }
     #PR {
+        margin: 3vw;
         font-size: 1rem;
         background-color: var(--Rosaf);
         padding: 1rem;

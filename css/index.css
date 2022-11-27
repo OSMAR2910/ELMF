@@ -9,6 +9,14 @@ html {
     background-color: var(--Rosa);
     font-family: 'Nunito Sans', sans-serif;
 }
+#F video {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:100%;
+    z-index: -101;
+  }
 .links {
     margin-left: -400vw;
 }
@@ -40,24 +48,25 @@ main img {
 }
 @media screen and (max-width: 500px) {
     main img {
+        margin-bottom: 4vh;
         width: 50vw;
         display: block;
-        margin-top: -10vh;
+        margin-top: -15vh;
         margin-left: auto;
         margin-right: auto;
     }
     .links {
-        margin-left: 0vw;
+        margin-left: 2vw;
     }
     .links a {
         border-radius: 5vw;
         font-size: 1.6rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
         transition: all 0.5s;
         color: var(--Negro);
         text-decoration: none;
-        margin-top: 3vh;
+        margin-top: 2vh;
         background-color: var(--Blanco);
         display: block;
         text-align: center;

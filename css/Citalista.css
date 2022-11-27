@@ -11,6 +11,14 @@ html {
     font-family: 'Nunito Sans', sans-serif;
     transition-duration: all 0.5s
 }
+#F video {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:100%;
+    z-index: -101;
+  }
 main img {
     display: block;
     margin-top: 5vh;
