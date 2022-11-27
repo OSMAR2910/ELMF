@@ -1,0 +1,93 @@
+:root {
+    --Rosaf: #ffc3c3;
+    --Rosa: #ffdcdc;
+    --Blanco: #ffffff;
+    --Negro: #0d0d0d;
+    --Gris: #bebebe;
+    --Dorado: #D4AF37;
+}
+#F video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:100%;
+    z-index: -101;
+  }
+html {
+    background-clip: var();
+    background-color: var(--Rosa);
+    font-family: 'Nunito Sans', sans-serif;
+    transition-duration: all 0.5s
+}
+#in {
+    height: 10vh;
+}
+main img {
+    display: block;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    border-color: var(--Rosa);
+    margin-top: -45vh;
+    width: 95.7vw;
+    position: fixed;
+    border-bottom: 0.4vh solid var(--Rosa);
+    display: flex;
+    padding: 1vw;
+    background-color: var(--Rosaf);
+    justify-content: center;
+    
+}
+nav a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: var(--Blanco);
+}
+#int {
+    text-decoration: none;
+    color: var(--Blanco);
+    background-color: var(--Rosaf);
+    height: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#int img {
+    width: 25vw;
+}
+#galeria {
+    margin-bottom: 5vh;
+    text-align: center;
+}
+#galeria img {
+    width: 15vw;
+}
+@media screen and (max-width: 500px) {
+    nav {
+        margin-top: -33vh;
+        padding: 3vw;
+        width: 90vw;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    main img {
+        margin-top: 0vw;
+    }
+    #int {
+        height: 50vh;
+    }
+    #int img {
+        width: 40vw;
+    }
+    #galeria {
+        margin-bottom: 5vh;
+        text-align: center;
+    }
+    #galeria img {
+        width: 30vw;
+    }
+}

@@ -1,0 +1,40 @@
+:root {
+    --Rosaf: #ffc3c3;
+    --Rosa: #ffdcdc;
+    --Blanco: #ffffff;
+    --Negro: #0d0d0d;
+    --Gris: #bebebe;
+    --Dorado: #D4AF37;
+}
+html {
+    background-color: var(--Rosa);
+    font-family: 'Nunito Sans', sans-serif;
+    transition-duration: all 0.5s
+}
+main img {
+    display: block;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    border-color: var(--Rosa);
+    margin-top: 0vh;
+    width: 95.7vw;
+    border-bottom: 0.4vh solid var(--Rosa);
+    display: flex;
+    padding: 1vw;
+    background-color: var(--Rosaf);
+    justify-content: center;
+    
+}
+nav a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: var(--Blanco);
+}
+h1 {
+    color: var(--Blanco);
+    text-align: center;
+}

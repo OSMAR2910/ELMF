@@ -1,0 +1,253 @@
+:root {
+    --Rosaf: #ffc3c3;
+    --Rosa: #ffdcdc;
+    --Blanco: #ffffff;
+    --Negro: #0d0d0d;
+    --Gris: #bebebe;
+    --Dorado: #D4AF37;
+}
+#F video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:100%;
+    z-index: -101;
+  }
+html {
+    background-color: var(--Rosa);
+    font-family: 'Nunito Sans', sans-serif;
+    transition-duration: all 0.5s
+}
+#ag {
+    position: fixed;
+    margin-left: 2vw;
+    margin-top: -25vh;
+    color: var(--Blanco);
+    text-align: center;
+}
+#in {
+    height: 10vh;
+}
+main img {
+    display: block;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    border-color: var(--Rosa);
+    margin-top: -45vh;
+    width: 95.7vw;
+    position: fixed;
+    border-bottom: 0.4vh solid var(--Rosa);
+    display: flex;
+    padding: 1vw;
+    background-color: var(--Rosaf);
+    justify-content: space-evenly;
+    
+}
+nav a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: var(--Blanco);
+}
+#int {
+    text-decoration: none;
+    color: var(--Blanco);
+    height: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#int video {
+        position: absolute;
+        height: inherit;
+        z-index: -100;
+}
+#int img {
+    width: 25vw;
+}
+#info {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--Blanco);
+    background-color: var(--Rosaf);
+    height: 50vh;
+    text-align: center;
+}
+#serv {
+    padding: 1rem;
+    color: var(--Blanco);
+    background-color: var(--Rosaf);
+    height: 85vh;
+    text-align: center;
+}
+#serv img {
+    padding: 0.4rem;
+    border: 0.3rem solid var(--Rosa);
+    border-radius: 10rem;
+    margin-top: 15vh;
+    width: 15vw;
+    transition: all 0.5s;
+}
+#serv img:hover {
+    width: 16vw;
+}
+#serv .left {
+    margin-left: 5vw;
+    float: left;
+}
+#serv .right {
+    margin-right: 5vw;
+    float: right;
+}
+#gale {
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--Blanco);
+    background-color: var(--Rosaf);
+    height: 25vh;
+    text-align: center;
+}
+#gale a {
+    transition: all 0.5s;
+    text-decoration: none;
+    color: var(--Blanco);
+    background-color: var(--Rosa);
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+#gale a:hover {
+    padding: 1.7rem;
+}
+#cont {
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--Blanco);
+    background-color: var(--Rosaf);
+    height: 50vh;
+    text-align: center;
+}
+#cont a {
+    color: var(--Blanco);
+    text-decoration: none;
+}
+#cont .wa img {
+    border-radius: 10vw;
+}
+.hr img {        
+    width: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+footer {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    color: var(--Blanco);
+}
+#s1, #s2, #s3, #s4 {
+    height: 10vh;
+}
+@media screen and (max-width: 500px) {
+    #ag {
+        position: fixed;
+        margin-left: 2vw;
+        margin-top: -25vh;
+        color: var(--Blanco);
+        text-align: center;
+        font-size: 0.7rem;
+    }
+    #ag img {
+        width: 13vw;
+    }
+    nav {
+        margin-top: -33vh;
+        padding: 3vw;
+        width: 90vw;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    main img {
+        margin-top: 0vw;
+    }
+    #int {
+        height: 25vh;
+    }
+    #int img {
+        width: 45vw;
+    }
+    #int video {
+        position: absolute;
+        height: inherit;
+        z-index: -100;
+}
+    #info {
+        height: 45vh;
+        padding: 10vw;
+        font-size: 1.2rem;
+    }
+    #serv {
+        padding: 1rem;
+        color: var(--Blanco);
+        background-color: var(--Rosaf);
+        height: 125vh;
+        text-align: center;
+    }
+    #serv img {
+        padding: 0.4rem;
+        border: 0.3rem solid var(--Rosa);
+        border-radius: 10rem;
+        margin-top: 0vh;
+        width: 35vw;
+        transition: all 0.5s;
+    }
+    #serv img:hover {
+        width: 40vw;
+    }
+    #serv .left {
+        margin-left: 0vw;
+        float: none;
+    }
+    #serv .right {
+        margin-right: 0vw;
+        float: none;
+    }
+    #gale {
+        height: 20vh;
+        padding: 5vw;
+        font-size: 1.2rem;
+        transition: all 0.5s;
+    }
+    #gale a {
+        background-color: var(--Rosa);
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+    #gale a:hover {
+        padding: 1.7rem;
+    }
+    #cont {
+        height: 50vh;
+        padding: 5vw;
+        font-size: 1.2rem;
+    }
+    #cont .wa img {
+        border-radius: 10vw;
+    }
+    .hr img {        
+        width: 12vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    footer {
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+        color: var(--Blanco);
+    }
+    #s1, #s2, #s3, #s4 {
+        height: 8vh;
+    }
+}
