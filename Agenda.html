@@ -20,9 +20,9 @@
 </head>
 
 <body>
-  <section id="F">
-    <video src="temas/diciembre/diciembre.mp4" autoplay="true" muted="true" loop="true"></video>
-</section>
+    <section id="F">
+        <video src="temas/diciembre/diciembre.mp4" autoplay="true" muted="true" loop="true"></video>
+    </section>
 
     <section id="in"></section>
     <main>
@@ -32,49 +32,53 @@
         <a href="Web.html">Inicio</a>
     </nav>
 
-  <script src="https://www.paypal.com/sdk/js?client-id=AYiW0Cn6YmWe27hAxo-yxoO5NR3EjZd8xqGNWvate4HKjtJV6ONZx6GXCchv9Os7r_6hK5fCfrIZuPGh&currency=MXN"></script>
-  
-<section id="G">
-  <div id="info">
-    <input type="date" class="date" id="fecha" name="fecha" min="2022-11-01" max="2026-01-01">
-    <input type="time" class="date" id="hora" name="hora" autocomplete="time" placeholder="Hora"/>
-    <input type="name" class="date" id="nombre" name="nombre" autocomplete="name" placeholder="Nombre"/>
-    <input type="email" class="date" id="email" name="email" autocomplete="email" placeholder="Email">
-    <input type="tel" class="date" id="telefono" name="telefono" autocomplete="tel" placeholder="Telefono">
-  </div>
-  <div id="paypal-button">
-    <script>
-      paypal.Buttons({
-    style:{
-        color: "blue",
-        shape: "pill",
-        label: "pay",
-    },
-  createOrder: (data, actions) => {
-    return actions.order.create({
-      purchase_units: [{
-        amount: {
-          value: "150"
-        }
-      }]
-    });
-  },
-  onCancel: (data, actions) => {
-    alert("Tu pago se ha cancelado");
-    window.location = "Web.html";
-    console.log(data);
-  },
-
-  onApprove: (data, actions) => {
-    return actions.order.capture().then(function(orderData) {
-      console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-      const transaction = orderData.purchase_units[0].payments.captures[0];
-      window.location = "Citalista.html";
-    });
-  }
-}).render('#paypal-button');
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AYiW0Cn6YmWe27hAxo-yxoO5NR3EjZd8xqGNWvate4HKjtJV6ONZx6GXCchv9Os7r_6hK5fCfrIZuPGh&currency=MXN">
     </script>
-  </div>
-</section>
+
+    <section id="G">
+        <div id="info">
+            <input type="date" class="date" id="fecha" name="fecha" min="2022-11-01" max="2026-01-01">
+            <input type="time" class="date" id="hora" name="hora" autocomplete="time" placeholder="Hora" />
+            <input type="name" class="date" id="nombre" name="nombre" autocomplete="name" placeholder="Nombre" />
+            <input type="email" class="date" id="email" name="email" autocomplete="email" placeholder="Email">
+            <input type="tel" class="date" id="telefono" name="telefono" autocomplete="tel" placeholder="Telefono">
+        </div>
+        <div id="paypal-button">
+            <script>
+            paypal.Buttons({
+                style: {
+                    color: "blue",
+                    shape: "pill",
+                    label: "pay",
+                },
+                createOrder: (data, actions) => {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: "150"
+                            }
+                        }]
+                    });
+                },
+                onCancel: (data, actions) => {
+                    alert("Tu pago se ha cancelado");
+                    window.location = "Web.html";
+                    console.log(data);
+                },
+
+                onApprove: (data, actions) => {
+                    return actions.order.capture().then(function(orderData) {
+                        console.log('Capture result', orderData, JSON.stringify(orderData, null,
+                        2));
+                        const transaction = orderData.purchase_units[0].payments.captures[0];
+                        window.location = "Citalista.html";
+                    });
+                }
+            }).render('#paypal-button');
+            </script>
+        </div>
+    </section>
 </body>
+
 </html>
