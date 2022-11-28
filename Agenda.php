@@ -76,10 +76,10 @@
                     });
                 }
             }).render('#paypal-button');
-            </script>
-            <?php
+                            <?php
     include "php/enviar-email.php";
     ?>
+            </script>
         </div>
     </section>
 </body>
