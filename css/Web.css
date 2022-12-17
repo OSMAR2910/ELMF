@@ -116,6 +116,21 @@ footer {
   z-index: -101;
 }
 
+/*Colores*/
+/*Tipos de letra*/
+#BP {
+  margin-top: 10vh;
+  margin-left: 80vw;
+  position: fixed;
+}
+#BP button {
+  width: 15vw;
+  height: 5vh;
+  color: #ffffff;
+  background-color: #ffc3c3;
+  border: 0;
+}
+
 #ag {
   position: fixed;
   margin-left: 2vw;

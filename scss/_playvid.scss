@@ -1,0 +1,14 @@
+@import "variables";
+#BP {
+    margin-top: 10vh;
+    margin-left: 80vw;
+    position: fixed;
+    
+    button {
+        width: 15vw;
+        height: 5vh;
+        color: $Blanco;
+        background-color: $Secundario;
+        border: 0;
+    }
+}
