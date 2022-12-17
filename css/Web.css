@@ -150,14 +150,14 @@ footer {
   padding: 1rem;
   text-decoration: none;
   color: #ffffff;
-  background-color: rgba(255, 195, 195, 0.862745098);
+  background-color: #ffc3c3;
   height: 40vh;
   text-align: center;
 }
 
 #serv {
   text-align: center;
-  background-color: rgba(255, 195, 195, 0.862745098);
+  background-color: #ffc3c3;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -185,7 +185,7 @@ footer {
   padding: 1rem;
   text-decoration: none;
   color: #ffffff;
-  background-color: rgba(255, 195, 195, 0.862745098);
+  background-color: #ffc3c3;
   height: 30vh;
   text-align: center;
 }
@@ -209,7 +209,7 @@ footer {
   padding: 1rem;
   text-decoration: none;
   color: #ffffff;
-  background-color: rgba(255, 195, 195, 0.862745098);
+  background-color: #ffc3c3;
   height: 65vh;
   text-align: center;
 }
@@ -323,7 +323,7 @@ footer {
 }
 @media screen and (max-width: 500px) {
   #serv {
-    background-color: rgba(255, 195, 195, 0.862745098);
+    background-color: #ffc3c3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
