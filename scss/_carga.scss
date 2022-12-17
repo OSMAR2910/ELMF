@@ -1,7 +1,7 @@
 @import "variables";
     #logo_load{
-        width: 99vw;
-        height: 99vh;
+        width: 100vw;
+        height: 100vh;
         background: $Rosa;
         position: fixed;
         display: flex;
@@ -13,7 +13,7 @@
                 width: 7rem;
                 height: 7rem;
                 animation: load 2s ease-in-out infinite;
-                border-radius: 99%;
+                border-radius: 100%;
                 border: 0.8rem dotted $Blanco;
                 img {
                     width: 7rem;
@@ -21,6 +21,23 @@
                 }
             }
         }
+    }
+    @media screen and (max-width: 500px){
+    #logo_load{
+        margin-top: -1vh;
+        margin-left: -2vw;
+        #cargando {
+            #circulo {
+                width: 5rem;
+                height: 5rem;
+                border: 0.5rem dotted $Blanco;
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+        }
+    }
     }
     @keyframes load {
         0% {

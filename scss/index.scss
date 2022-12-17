@@ -46,7 +46,7 @@ main img {
         }
     }
     .links {
-        margin-left: 2vw;
+        margin-left: 0vw;
         a {
             border-radius: 5vw;
             font-size: 1.6rem;
@@ -59,7 +59,7 @@ main img {
             background-color: $Secundario;
             display: block;
             text-align: center;
-            width: 95vw;
+            width: 96vw;
         }
         a:hover {
             color: $Primario;

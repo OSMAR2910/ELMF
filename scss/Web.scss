@@ -6,23 +6,23 @@
 #ag {
     position: fixed;
     margin-left: 2vw;
-    margin-top: -45vh;
+    margin-top: -40vh;
     color: $Blanco;
     text-align: center;
     img {
-        width: 5vw;
+        width: 4vw;
     }
 }
 #int {
     text-decoration: none;
     color: $Blanco;
-    height: 70vh;
+    height: 60vh;
     display:flex;
     justify-content: center;
     align-items: center;
 
     video {
-        width: 60vw;
+        width: 100%;
         position: absolute;
         height: inherit;
         z-index: -100; 
@@ -32,7 +32,7 @@
     }
 }
 #info {
-    font-size: 1vw;
+    font-size: 1.5vw;
     padding: 1rem;
     text-decoration: none;
     color: $Blanco;
@@ -59,7 +59,7 @@
         color: $Blanco;
     }
     img {
-        width: 100%;
+        width: 70%;
         border-radius: 100%;
         padding: 0.3vw;
         border: 0.3rem solid $Blanco;
@@ -145,7 +145,7 @@ footer {
             width: 40vw;
         }
         video {
-            width: 100vw;
+            width: 100%;
             position: absolute;
             height: inherit;
             z-index: -100; 
@@ -223,5 +223,12 @@ footer {
     }
     #s1, #s2, #s3, #s4 {
         height: 8vh;
+    }
+}
+@media screen and (max-height: 670px) {
+    #int {
+        img {
+            width: 30vw;
+        }
     }
 }
