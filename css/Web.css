@@ -346,7 +346,7 @@ footer {
 }
 @media screen and (max-width: 500px) {
   #int {
-    height: 25vh;
+    height: 24vh;
   }
   #int img {
     width: 40vw;
@@ -441,6 +441,9 @@ footer {
   }
 }
 @media screen and (max-height: 670px) {
+  #int {
+    height: 30vh;
+  }
   #int img {
     width: 30vw;
   }

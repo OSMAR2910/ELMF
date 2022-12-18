@@ -173,13 +173,13 @@ footer {
 #PR h2 {
   color: #ffffff;
 }
-#PR p {
-  color: #ffffff;
-  font-size: 1.5vw;
-}
 #PR b {
-  color: #ffdcdc;
+  color: #0d0d0d;
   font-size: 1.2vw;
+}
+#PR p {
+  color: #861720;
+  font-size: 1.5vw;
 }
 #PR img {
   width: 75%;
