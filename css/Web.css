@@ -294,7 +294,7 @@ footer {
     width: 90vw;
   }
   nav a {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-family: "Nunito Sans", sans-serif;
   }
   footer {
@@ -420,5 +420,14 @@ footer {
 @media screen and (max-height: 670px) {
   #int img {
     width: 30vw;
+  }
+  #info {
+    font-size: 4.5vw;
+  }
+  #cont {
+    font-size: 1rem;
+  }
+  #cont img {
+    width: 70vw;
   }
 }/*# sourceMappingURL=Web.css.map */
