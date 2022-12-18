@@ -5,10 +5,17 @@
     position: fixed;
     
     button {
-        width: 15vw;
-        height: 5vh;
+        width: 16vw;
+        height: 6vh;
         color: $Blanco;
         background-color: $Secundario;
-        border: 0;
+        border-radius: 20%;
+        border: 0.1rem solid $Blanco;
+        transition: all 0.5s;
+    }
+    button:active {
+        width: 16.5vw;
+        height: 6.5vh;
+        background-color: $Primario;
     }
 }

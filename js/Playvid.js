@@ -5,3 +5,11 @@ function playPause() {
           else
           Fondo.pause();
 }
+
+var backSound = document.getElementsByClassName("aud");
+function playPause() {
+    if(backSound.paused)
+          backSound.play();
+          else
+          backSound.pause();
+}

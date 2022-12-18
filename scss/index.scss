@@ -2,6 +2,8 @@
 @import "nav";
 @import "variables";
 @import "fondo";
+@import "playvid";
+
 .links {
     margin-left: -400vw;
 }
@@ -33,8 +35,9 @@ main img {
         
 }
 @media screen and (max-width: 500px) {
+    @import "carga-sn";
     @import "fondo-m";
-    @import "nav-m";
+    @import "nav";
     main {
         img {
             margin-bottom: 4vh;

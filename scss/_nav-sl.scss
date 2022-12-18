@@ -6,7 +6,6 @@
 html {
     background-color: $Primario;
 }
-
 nav {
     border-color: $Primario;
     margin-top: 2vh;
@@ -24,4 +23,10 @@ nav {
         color: $Blanco;
         font-family: $Letra;
     }
+}
+footer {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    color: $Blanco;
+    text-align: center;
 }

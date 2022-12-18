@@ -28,11 +28,15 @@
                     </div>
             </div>
     </section>
-    <audio autobuffer="true" autoplay="true" playsinline="true" loop="true">
-        <source src="temas/diciembre/Navidad.mp3">
+    <audio class="aud" autobuffer="true" autoplay="true" playsinline="true" loop="true">
+        <source src="temas/diciembre/diciembre.mp3">
     </audio>
     <section id="F">
-        <video autobuffer="true" autoplay="true" playsinline="true" muted="true" loop="true" src="temas/diciembre/diciembre.mp4"></video>
+        <video class="vid" autobuffer="true" autoplay="true" playsinline="true" muted="true" loop="true" 
+        src="temas/diciembre/diciembre.mp4"></video>
+    </section>
+    <section id="BP">
+        <button onclick="playPause()">Play vid</button>
     </section>
 
     <section id="in"></section>
@@ -97,6 +101,8 @@
     <footer>
         Developed by "Osmar Sifuentes".
     </footer>
+
     <script src="js/Carga.js"></script>
+    <script src="js/Playvid.js"></script>
 </body>
 </html>
