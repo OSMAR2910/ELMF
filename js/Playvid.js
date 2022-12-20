@@ -1,4 +1,4 @@
-var Fondo = document.getElementsByClassName("vid");
+var Fondo = document.getElementById("vid");
 function playPause() {
     if(Fondo.paused)
           Fondo.play();
@@ -6,7 +6,7 @@ function playPause() {
           Fondo.pause();
 }
 
-var backSound = document.getElementsByClassName("aud");
+var backSound = document.getElementById("aud");
 function playPause() {
     if(backSound.paused)
           backSound.play();

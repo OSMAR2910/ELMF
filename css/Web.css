@@ -125,7 +125,7 @@ footer {
     border: 0.2rem solid #ffffff;
   }
   nav {
-    margin-top: -34vh;
+    margin-top: -33.5vh;
     margin-left: 0vw;
     margin-right: 0vw;
     padding: 3.5vw;
@@ -144,7 +144,7 @@ footer {
 }
 @media screen and (max-width: 500px) and (max-height: 670px) {
   nav {
-    margin-top: -39vh;
+    margin-top: -38.5vh;
   }
 }
 /*Colores*/
@@ -237,7 +237,7 @@ footer {
   z-index: -100;
 }
 #int img {
-  width: 15vw;
+  width: 20vw;
 }
 
 #info {
@@ -352,7 +352,7 @@ footer {
     height: 24vh;
   }
   #int img {
-    width: 40vw;
+    width: 45vw;
     -webkit-animation: le1 3s ease-in-out infinite;
             animation: le1 3s ease-in-out infinite;
   }
@@ -458,7 +458,7 @@ footer {
     height: 30vh;
   }
   #int img {
-    width: 30vw;
+    width: 45vw;
   }
   #info {
     font-size: 4.5vw;
