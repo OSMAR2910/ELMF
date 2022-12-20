@@ -1,9 +1,9 @@
-var Fondo = document.getElementById("vid");
+var fondo = document.getElementById("vid");
 function playPause() {
-    if(Fondo.paused)
-          Fondo.play();
+    if(fondo.paused)
+          fondo.play();
           else
-          Fondo.pause();
+          fondo.pause();
 }
 
 var backSound = document.getElementById("aud");
