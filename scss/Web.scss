@@ -120,7 +120,10 @@ footer {
     text-align: center;
     margin-top: 6vh;
     margin-bottom: 6vh;
-    color: $Blanco;
+    a {
+        color: $Blanco;
+        text-decoration: none;
+    }
 }
 #s1, #s2, #s3, #s4 {
     height: 10vh;

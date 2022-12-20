@@ -33,6 +33,15 @@ main img {
     }
         
 }
+footer {
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    a {
+        color: $Blanco;
+        text-decoration: none;
+    }
+}
 @media screen and (max-width: 500px) {
     @import "carga-sn";
     main {

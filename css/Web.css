@@ -334,7 +334,10 @@ footer {
   text-align: center;
   margin-top: 6vh;
   margin-bottom: 6vh;
+}
+footer a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 #s1, #s2, #s3, #s4 {

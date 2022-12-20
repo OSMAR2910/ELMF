@@ -241,6 +241,16 @@ footer {
   border: 0.2rem solid #ffffff;
 }
 
+footer {
+  text-align: center;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 500px) {
   #PR {
     grid-template-columns: repeat(2, 1fr);

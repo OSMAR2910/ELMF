@@ -35,6 +35,15 @@
     color: $Negro;
     border-radius: 0.5rem;
 }
+footer {
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    a {
+        color: $Blanco;
+        text-decoration: none;
+    }
+}
 @media screen and (max-width: 500px) {
     #int {
         height: 50vh;
