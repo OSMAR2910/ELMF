@@ -10,35 +10,22 @@
         color: $Blanco;
         font-size: 0;
         background-color: $Secundario;
-        border-radius: 0;
-        border: 0rem solid $Blanco;
-        transition: all 0.5s;
     }
-    button:active {
-        width: 0vw;
-        height: 0vh;
-        background-color: $Primario;
     }
-}
 @media screen and (max-width: 500px) {
 #BP {
-    margin-top: 8vh;
+    margin-top: 10vh;
     margin-left: 80vw;
     position: fixed;
     
     button {
-        width: 16vw;
-        height: 6vh;
+        width: 15vw;
+        height: 5vh;
         color: $Blanco;
         font-size: 3vw;
         background-color: $Secundario;
-        border-radius: 20%;
-        border: 0.1rem solid $Blanco;
-        transition: all 0.5s;
     }
     button:active {
-        width: 16.5vw;
-        height: 6.5vh;
         background-color: $Primario;
     }
 }

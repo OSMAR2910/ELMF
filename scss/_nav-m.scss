@@ -9,9 +9,12 @@ html {
 main img {
     width: 40vw;
     margin-top: 0vw;
+    padding: 0.1rem;
+    border-radius: 100%;
+    border: 0.2rem solid $Blanco;
 }
 nav {
-    margin-top: -32.5vh;
+    margin-top: -34vh;
     margin-left: 0vw;
     margin-right: 0vw;
     padding: 3.5vw;
@@ -30,6 +33,6 @@ footer {
 }
 @media screen and (max-height: 670px) {
     nav {
-        margin-top: -37vh;
+        margin-top: -39vh;
     }
 }
