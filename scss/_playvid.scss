@@ -29,6 +29,7 @@
         border-radius: 1rem;
         border: 0;
         background-color: $Secundario;
+        transition: all 0.1s;
     }
     button:active {
         background-color: $Primario;

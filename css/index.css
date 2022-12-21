@@ -1,3 +1,62 @@
+/*Colores*/
+/*Tipos de letra*/
+/*Fondos*/
+#logo_load {
+  width: 100vw;
+  height: 100vh;
+  background: #ffdcdc;
+  position: fixed;
+  display: flex;
+  z-index: 999;
+}
+#logo_load #cargando {
+  margin: auto;
+  display: block;
+}
+#logo_load #cargando #circulo {
+  width: 7rem;
+  height: 7rem;
+  -webkit-animation: load 2s ease-in-out infinite;
+          animation: load 2s ease-in-out infinite;
+  border-radius: 100%;
+  border: 0.8rem dotted #ffffff;
+}
+#logo_load #cargando #circulo img {
+  width: 7rem;
+  height: 7rem;
+}
+
+@media screen and (max-width: 500px) {
+  #logo_load {
+    margin-top: -1vh;
+    margin-left: -2vw;
+  }
+  #logo_load #cargando #circulo {
+    width: 5rem;
+    height: 5rem;
+    border: 0.5rem dotted #ffffff;
+  }
+  #logo_load #cargando #circulo img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@-webkit-keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*General*/ /*Colores*/
 /*Tipos de letra*/
 /*Fondos*/
@@ -20,6 +79,7 @@ main img {
   margin-bottom: 5vh;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.62);
 }
 
 nav {
@@ -150,6 +210,7 @@ footer {
     border-radius: 1rem;
     border: 0;
     background-color: #ffc3c3;
+    transition: all 0.1s;
   }
   #BP button:active {
     background-color: #ffdcdc;
@@ -213,7 +274,7 @@ footer a {
     margin-bottom: 4vh;
     width: 50vw;
     display: block;
-    margin-top: -55vh;
+    margin-top: -15vh;
     margin-left: auto;
     margin-right: auto;
   }

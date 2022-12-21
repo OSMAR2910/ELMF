@@ -82,6 +82,7 @@ main img {
   margin-bottom: 5vh;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.62);
 }
 
 nav {
@@ -209,28 +210,102 @@ footer {
     border-radius: 1rem;
     border: 0;
     background-color: #ffc3c3;
+    transition: all 0.1s;
   }
   #BP button:active {
     background-color: #ffdcdc;
   }
 }
+@-webkit-keyframes ag_info_input {
+  0% {
+    margin-left: -300vw;
+  }
+  50% {
+    margin-left: 6vw;
+  }
+  100% {
+    margin-left: 0vw;
+  }
+}
+@keyframes ag_info_input {
+  0% {
+    margin-left: -300vw;
+  }
+  50% {
+    margin-left: 6vw;
+  }
+  100% {
+    margin-left: 0vw;
+  }
+}
+@-webkit-keyframes modal1_h1 {
+  0% {
+    margin-left: 300vw;
+  }
+  50% {
+    margin-left: -6vw;
+  }
+  100% {
+    margin-left: 0vw;
+  }
+}
+@keyframes modal1_h1 {
+  0% {
+    margin-left: 300vw;
+  }
+  50% {
+    margin-left: -6vw;
+  }
+  100% {
+    margin-left: 0vw;
+  }
+}
+@-webkit-keyframes le1int_img {
+  0% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
+@keyframes le1int_img {
+  0% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
 /*Modal*/
 #modal1 {
-  margin-right: 5vw;
-  margin-left: 5vw;
+  width: 85vw;
+  height: 30vh;
   background-color: #ffc3c3;
   border: 0;
   border-radius: 1.5rem;
 }
 #modal1 h1 {
+  width: 100%;
+  -webkit-animation: modal1_h1 1.5s 1;
+          animation: modal1_h1 1.5s 1;
   text-align: center;
   font-size: 3.5vw;
   color: #ffffff;
   margin-bottom: 1vh;
 }
 #modal1 #ag_info {
+  width: 100%;
   margin-top: 1vh;
+  margin-left: 0vw;
   text-align: center;
+  -webkit-animation: ag_info_input 1.5s 1;
+          animation: ag_info_input 1.5s 1;
 }
 #modal1 #paypal-button {
   width: 70vw;
@@ -421,8 +496,8 @@ footer a {
   }
   #int img {
     width: 50vw;
-    -webkit-animation: le1 3s ease-in-out infinite;
-            animation: le1 3s ease-in-out infinite;
+    -webkit-animation: int_img 3s ease-in-out infinite;
+            animation: int_img 3s ease-in-out infinite;
   }
   #int video {
     width: 100%;
@@ -497,28 +572,6 @@ footer a {
   }
   #s1, #s2, #s3, #s4 {
     height: 8vh;
-  }
-}
-@-webkit-keyframes le1 {
-  0% {
-    transform: rotate(6deg);
-  }
-  50% {
-    transform: rotate(-6deg);
-  }
-  100% {
-    transform: rotate(6deg);
-  }
-}
-@keyframes le1 {
-  0% {
-    transform: rotate(6deg);
-  }
-  50% {
-    transform: rotate(-6deg);
-  }
-  100% {
-    transform: rotate(6deg);
   }
 }
 @media screen and (max-height: 670px) {
