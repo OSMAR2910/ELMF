@@ -39,10 +39,59 @@
         <button onclick="playPause()"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
     </section>
     <section id="ag">
-        <a href="Agenda.html"><img src="img/Iconos/agenda.png" width="70vw"></a>
+        <button id="button_ag_abrir"><img src="img/Iconos/agenda.png" alt="img" width="70vw"></button>
         <br>
         <b>Agendar cita</b>
     </section>    
+    <!--Modal-->
+    <dialog id="modal1">
+        <button id="button_ag_cerrar"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Completa el formulario y paga la cita.</h1>
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AYiW0Cn6YmWe27hAxo-yxoO5NR3EjZd8xqGNWvate4HKjtJV6ONZx6GXCchv9Os7r_6hK5fCfrIZuPGh&currency=MXN">
+    </script>
+        <div id="ag_info">
+            <input type="date" class="date" id="fecha" name="fecha" min="2022-11-01" max="2026-01-01">
+            <input type="time" class="date" id="hora" name="hora" autocomplete="time" placeholder="Hora" />
+            <input type="name" class="date" id="nombre" name="nombre" autocomplete="name" placeholder="Nombre" />
+            <input type="email" class="date" id="email" name="email" autocomplete="email" placeholder="Email">
+            <input type="tel" class="date" id="telefono" name="telefono" autocomplete="tel" placeholder="Telefono">
+        </div>
+        <div id="paypal-button">
+            <script>
+            paypal.Buttons({
+                style: {
+                    color: "blue",
+                    shape: "pill",
+                    label: "pay",
+                },
+                createOrder: (data, actions) => {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: "150"
+                            }
+                        }]
+                    });
+                },
+                onCancel: (data, actions) => {
+                    alert("Tu pago se ha cancelado");
+                    window.location = "Web.html";
+                    console.log(data);
+                },
+
+                onApprove: (data, actions) => {
+                    return actions.order.capture().then(function(orderData) {
+                        console.log('Capture result', orderData, JSON.stringify(orderData, null,
+                        2));
+                        const transaction = orderData.purchase_units[0].payments.captures[0];
+                        window.location = "Citalista.html";
+                    });
+                }
+            }).render('#paypal-button');
+            </script>
+        </div>
+    </dialog>
     <!-Contenido-->
     <section id="in"></section>
     <main>
@@ -150,5 +199,6 @@
 
     <script src="js/Carga.js"></script>
     <script src="js/Playvid.js"></script>
+    <script src="js/Modal1.js"></script>
 </body>
 </html>
