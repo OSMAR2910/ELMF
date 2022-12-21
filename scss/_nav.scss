@@ -1,0 +1,88 @@
+/*General*/
+@import "variables";
+*{
+    font-family: $Letra;
+}
+html {
+    background-color: $Primario;
+}
+#in {
+    height: 10vh;
+}
+main img {
+    width: 15vw;
+    display: block;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    border: 0.3rem solid $Blanco;
+    -webkit-box-shadow: 0px 0px 60px 10px rgba(255,255,255,0.62);
+    -moz-box-shadow: 0px 0px 60px 10px rgba(255,255,255,0.62);
+    box-shadow: 0px 0px 60px 10px rgba(255,255,255,0.62);
+}
+nav {
+    width: 95%;
+    display: flex;
+    margin-left: 1.5vw;
+    margin-right: 2.5vw;
+    border-color: $Primario;
+    margin-top: -50vh;
+    position: fixed;
+    -webkit-box-shadow: 0px 10px 60px -10px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 10px 60px -10px rgba(255,255,255,1);
+    box-shadow: 0px 10px 60px -10px rgba(255,255,255,1);
+    padding: 1vw;
+    background-color: $Rosat;
+    justify-content: space-evenly;
+    a {
+        font-size: 1vw;
+        text-decoration: none;
+        color: $Blanco;
+        font-family: $Letra;
+    }
+    
+}
+footer {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    color: $Blanco;
+    text-align: center;
+}
+@media screen and (max-width: 500px) {
+    *{
+    font-family: $Letra;
+}
+html {
+    background-color: $Primario;
+}
+main img {
+    width: 40vw;
+    margin-top: 0vw;
+    padding: 0.1rem;
+    border-radius: 100%;
+    border: 0.2rem solid $Blanco;
+}
+nav {
+    width: 90%;
+    margin-top: -33vh;
+    padding: 3.5vw;
+
+    a {
+        font-size: 3.5vw;
+        font-family: $Letra;
+    }
+}
+footer {
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    color: $Blanco
+}
+@media screen and (max-height: 650px) {
+    nav {
+        margin-top: -38vh;
+    }
+}
+}

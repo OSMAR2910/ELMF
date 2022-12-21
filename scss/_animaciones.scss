@@ -1,0 +1,33 @@
+@keyframes ag_info_input {
+    0% {
+        margin-left: -300vw;
+    }
+    50% {
+        margin-left: 6vw;
+    }
+    100% {
+        margin-left: 0vw;
+    }
+}
+@keyframes modal1_h1 {
+    0% {
+        margin-left: 300vw;
+    }
+    50% {
+        margin-left: -6vw;
+    }
+    100% {
+        margin-left: 0vw;
+    }
+}
+@keyframes int_img {
+    0% {
+        transform: rotate(8deg);
+    }
+    50% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(8deg);
+    }
+}
