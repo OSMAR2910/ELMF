@@ -108,6 +108,28 @@
     transform: rotate(0deg) translate(0, 0vh);
   }
 }
+@-webkit-keyframes logo_palpitar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes logo_palpitar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*Colores*/
 /*Tipos de letra*/
 /*Fondos*/
@@ -205,6 +227,17 @@
     transform: rotate(0deg) translate(0, 0vh);
   }
 }
+@keyframes logo_palpitar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   font-family: "Nunito Sans", sans-serif;
 }
@@ -227,8 +260,10 @@ main img {
   border-radius: 100%;
   border: 0.3rem solid #ffffff;
   box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.62);
-  -webkit-animation: logo 3s 1;
-          animation: logo 3s 1;
+  -webkit-animation: logo_palpitar 3s ease-in-out infinite, logo 3s 1;
+          animation: logo_palpitar 3s ease-in-out infinite, logo 3s 1;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 nav {

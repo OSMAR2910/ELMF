@@ -19,10 +19,9 @@ main img {
     margin-right: auto;
     border-radius: 100%;
     border: 0.3rem solid $Blanco;
-    -webkit-box-shadow: 0px 0px 60px 10px rgba(255,255,255,0.62);
-    -moz-box-shadow: 0px 0px 60px 10px rgba(255,255,255,0.62);
     box-shadow: 0px 0px 60px 10px rgba(255,255,255,0.62);
-    animation: logo 3s 1;
+    animation: logo_palpitar 3s ease-in-out infinite, logo 3s 1;
+    animation-delay: 2s;
 }
 nav {
     width: 95%;
@@ -32,8 +31,6 @@ nav {
     border-color: $Primario;
     margin-top: -50vh;
     position: fixed;
-    -webkit-box-shadow: 0px 0px 70px 0px rgba(255,255,255,1);
-    -moz-box-shadow: 0px 0px 70px 0px rgba(255,255,255,1);
     box-shadow: 0px 0px 70px 0px rgba(255,255,255,1);
     padding: 1vw;
     background-color: $Rosat;
