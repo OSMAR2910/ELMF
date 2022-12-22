@@ -400,36 +400,44 @@ footer {
 
 /*Contenido*/
 #int {
+  margin-left: 1rem;
+  margin-right: 1rem;
   text-decoration: none;
   color: #ffffff;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ffc3c3;
+  padding: 1vw;
 }
 #int video {
   width: 100%;
   position: absolute;
   height: inherit;
-  z-index: -100;
 }
 #int img {
-  width: 20vw;
+  width: 15vw;
   -webkit-animation: int_img 3s ease-in-out infinite;
           animation: int_img 3s ease-in-out infinite;
 }
 
 #info {
-  font-size: 1.7vw;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 2vw;
   padding: 1rem;
   text-decoration: none;
   color: #ffffff;
   background-color: #ffc3c3;
-  height: 40vh;
+  height: 55vh;
   text-align: center;
 }
 
 #serv {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 55vh;
   text-align: center;
   background-color: #ffc3c3;
   display: grid;
@@ -456,12 +464,17 @@ footer {
 }
 
 #gale {
-  font-size: 1.5vw;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 2vw;
   padding: 2vw;
   text-decoration: none;
   color: #ffffff;
   background-color: #ffc3c3;
-  height: 30vh;
+  height: 55vh;
+}
+#gale #gale_cont {
+  margin-top: 15vh;
   text-align: center;
 }
 #gale h2 {
@@ -480,12 +493,14 @@ footer {
 }
 
 #cont {
-  font-size: 1.5rem;
-  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: larger;
+  padding: 1vh;
   text-decoration: none;
   color: #ffffff;
   background-color: #ffc3c3;
-  height: 65vh;
+  height: 55vh;
   text-align: center;
 }
 #cont a {
@@ -493,6 +508,7 @@ footer {
   text-decoration: none;
 }
 #cont .wa img {
+  width: 20%;
   border-radius: 10vw;
 }
 

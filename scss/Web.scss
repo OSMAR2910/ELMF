@@ -101,34 +101,42 @@
 }
 /*Contenido*/
 #int {
-        text-decoration: none;
-        color: $Blanco;
-        height: 50vh;
-        display:flex;
-        justify-content: center;
-        align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: $Blanco;
+    height: 55vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $Secundario;
+    padding: 1vw;
 
-        video {
-            width: 100%;
-            position: absolute;
-            height: inherit;
-            z-index: -100; 
-        }
-        img {
-            width: 20vw;
-            animation: int_img 3s ease-in-out infinite;
-        }
+    video {
+        width: 100%;
+        position: absolute;
+        height: inherit;
     }
+    img {
+        width: 15vw;
+        animation: int_img 3s ease-in-out infinite;
+    }
+}
 #info {
-    font-size: 1.7vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2vw;
     padding: 1rem;
     text-decoration: none;
     color: $Blanco;
     background-color: $Secundario;
-    height: 40vh;
+    height: 55vh;
     text-align: center;
 }
 #serv {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 55vh;
     text-align: center;
     background-color: $Secundario;
     display: grid;
@@ -155,14 +163,19 @@
     }
 }
 #gale {
-    font-size: 1.5vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2vw;
     padding: 2vw;
     text-decoration: none;
     color: $Blanco;
     background-color: $Secundario;
-    height: 30vh;
-    text-align: center;
+    height: 55vh;
 
+    #gale_cont {
+        margin-top: 15vh;
+        text-align: center;
+    }
     h2 {
         margin-bottom: 7vh;
     }
@@ -179,19 +192,21 @@
     }
 }
 #cont {
-    font-size: 1.5rem;
-    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: larger;
+    padding: 1vh;
     text-decoration: none;
     color: $Blanco;
     background-color: $Secundario;
-    height: 65vh;
+    height: 55vh;
     text-align: center;
-
     a {
         color: $Blanco;
         text-decoration: none;
     }
     .wa img {
+        width: 20%;
         border-radius: 10vw;
     }
 }
