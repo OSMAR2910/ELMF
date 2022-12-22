@@ -278,7 +278,7 @@ footer {
   }
   nav {
     width: 90%;
-    margin-top: -31.5vh;
+    margin-top: -32.5vh;
     padding: 3.5vw;
   }
   nav a {
@@ -522,8 +522,7 @@ footer {
 /*Fixed*/
 #ag {
   position: fixed;
-  margin-top: 15vh;
-  margin-left: 2vw;
+  margin: 15vh 0 0 2vw;
   text-align: center;
   font-size: 0.7rem;
   color: #ffffff;
@@ -539,8 +538,7 @@ footer {
 
 /*Contenido*/
 #int {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
   text-decoration: none;
   color: #ffffff;
   height: 25rem;
@@ -562,20 +560,17 @@ footer {
 }
 
 #info {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 1.7rem;
-  padding: 1rem;
-  text-decoration: none;
-  color: #ffffff;
+  margin: 0 1rem;
   background-color: #ffc3c3;
-  height: 25rem;
   text-align: center;
+  padding: 1rem;
+  height: 25rem;
+  color: #ffffff;
+  font-size: 1.7rem;
 }
 
 #serv {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
   height: 25rem;
   text-align: center;
   background-color: #ffc3c3;
@@ -584,8 +579,7 @@ footer {
   padding: 2vw;
 }
 #serv div {
-  margin-right: 2vw;
-  margin-left: 1vw;
+  margin: 0 2vw 0 1vw;
 }
 #serv a {
   text-decoration: none;
@@ -604,8 +598,7 @@ footer {
 
 #gale {
   position: relative;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
   font-size: 2vw;
   padding: 2vw;
   text-decoration: none;
@@ -636,8 +629,7 @@ footer {
 }
 
 #cont {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
   font-size: larger;
   padding: 1vh;
   text-decoration: none;
@@ -657,8 +649,7 @@ footer {
 
 .hr img {
   width: 4vw;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding: 0 3vh;
 }
 
 #redes {
@@ -668,8 +659,7 @@ footer {
 
 footer {
   text-align: center;
-  margin-top: 6vh;
-  margin-bottom: 6vh;
+  margin: 6vh 0;
 }
 footer a {
   color: #ffffff;
@@ -695,7 +685,7 @@ footer a {
     width: 13vw;
   }
   #int {
-    height: 15rem;
+    height: 20rem;
   }
   #int video {
     width: 85%;
@@ -705,10 +695,13 @@ footer a {
   }
   #info {
     font-size: 1.3rem;
-    height: 25rem;
+    height: 35rem;
+  }
+  #info #info_cont {
+    margin-top: 30%;
   }
   #serv {
-    height: auto;
+    height: 35rem;
     grid-template-columns: repeat(2, 1fr);
   }
   #serv h2 {
@@ -721,11 +714,11 @@ footer a {
   }
   #gale {
     font-size: 5vw;
-    height: 25rem;
+    height: 35rem;
   }
   #gale #gale_cont {
     left: -3%;
-    top: 25%;
+    top: 30%;
   }
   #cont {
     font-size: larger;
@@ -735,14 +728,7 @@ footer a {
   }
   .hr img {
     width: 12vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
-  footer {
-    text-align: center;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
-    color: #ffffff;
+    padding: 0 2vw;
   }
   #s1, #s2, #s3, #s4 {
     height: 8vh;
