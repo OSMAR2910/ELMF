@@ -3,6 +3,7 @@
     margin-top: 15vh;
     margin-left: 90vw;
     position: fixed;
+    z-index: 1100;
     
     button {
         width: 6vw;
@@ -23,7 +24,7 @@
 }
 @media screen and (max-width: 500px) {
 #BP {
-    margin-top: 8vh;
+    margin-top: 10vh;
     margin-left: 80vw;
     
     button {
@@ -35,4 +36,14 @@
         background-color: $Primario;
     }
 }
+}
+@media screen and (max-height: 650px) {
+    #BP {
+        margin-top: 13vh;
+
+        button {
+            width: 16vw;
+            height: 7vh;
+        }
+    }
 }

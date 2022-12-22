@@ -90,6 +90,7 @@
     text-align: center;
     font-size: 0.7rem;
     color: $Blanco;
+    z-index: 1100;
     button {
         background-color: $Transparente;
         border: 0; 
@@ -218,7 +219,7 @@ footer {
 @media screen and (max-width: 500px) {
     #ag {
         position: fixed;
-        margin-top: 8vh;
+        margin-top: 10vh;
         text-align: center;
         font-size: 0.7rem;
         button {
@@ -324,6 +325,9 @@ footer {
     }
 }
 @media screen and (max-height: 650px) {
+    #ag {
+        margin-top: 15vh;
+    }
     #int {
         height: 30vh;
         img {

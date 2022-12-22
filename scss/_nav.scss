@@ -36,6 +36,7 @@ nav {
     padding: 1vw;
     background-color: $Rosat;
     justify-content: space-evenly;
+    z-index: 1150;
     a {
         font-size: 1vw;
         text-decoration: none;
@@ -66,7 +67,7 @@ main img {
 }
 nav {
     width: 90%;
-    margin-top: -33vh;
+    margin-top: -32.5vh;
     padding: 3.5vw;
 
     a {
@@ -81,8 +82,11 @@ footer {
     color: $Blanco
 }
 @media screen and (max-height: 650px) {
+main img {
+    margin-top: 4vh;
+}
     nav {
-        margin-top: -38vh;
+        margin-top: -40.5vh;
     }
 }
 }
