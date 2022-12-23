@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7081360811271967"
-     crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/Iconos/Logo1.jpg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content= "width=device-width, user-scalable=no">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/Web.css">
     <meta name="theme-color" content="#ffdcdc">
     <meta name="msapplication-navbutton-color" content="#ffdcdc">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffdcdc">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/15d60a6cf6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,16 +47,32 @@
     <dialog id="modal1">
         <button id="button_ag_cerrar"><i class="fa-solid fa-xmark"></i></button>
         <h1>Completa el formulario y paga la cita.</h1>
-    <script
-        src="https://www.paypal.com/sdk/js?client-id=AYiW0Cn6YmWe27hAxo-yxoO5NR3EjZd8xqGNWvate4HKjtJV6ONZx6GXCchv9Os7r_6hK5fCfrIZuPGh&currency=MXN">
-    </script>
+
         <div id="ag_info">
-            <input type="date" class="date" id="fecha" name="fecha" min="2022-11-01" max="2026-01-01">
-            <input type="time" class="date" id="hora" name="hora" autocomplete="time" placeholder="Hora" />
-            <input type="name" class="date" id="nombre" name="nombre" autocomplete="name" placeholder="Nombre" />
-            <input type="email" class="date" id="email" name="email" autocomplete="email" placeholder="Email">
-            <input type="tel" class="date" id="telefono" name="telefono" autocomplete="tel" placeholder="Telefono">
+            <div>
+                <i class="fa-solid fa-calendar-days"></i>
+                <input type="date" class="date" id="fecha" name="fecha" min="2022-11-01" max="2026-01-01">
+            </div>
+            <div>
+                <i class="fa-solid fa-hourglass-start"></i>
+                <input type="time" class="date" id="hora" name="hora" autocomplete="time" placeholder="Hora">
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <input type="name" class="date" id="nombre" name="nombre" autocomplete="name" placeholder="Nombre">
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" class="date" id="email" name="email" autocomplete="email" placeholder="Email">
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" class="date" id="telefono" name="telefono" autocomplete="tel" placeholder="Telefono">
+            </div>
         </div>
+            <script
+                 src="https://www.paypal.com/sdk/js?client-id=AYiW0Cn6YmWe27hAxo-yxoO5NR3EjZd8xqGNWvate4HKjtJV6ONZx6GXCchv9Os7r_6hK5fCfrIZuPGh&currency=MXN">
+            </script>
         <div id="paypal-button">
             <script>
             paypal.Buttons({
@@ -109,8 +125,8 @@
     <section id="int">
 
         <video id="vid" autobuffer="true" autoplay="true" playsinline="true" muted="true" loop="true">
-            <source src="temas/diciembre/diciembre1.webm">
-            <source src="temas/diciembre/diciembre1.mp4">
+            <source src="temas/diciembre/vid.webm">
+            <source src="temas/diciembre/vid.mp4">
             Este video no es compatible con su navegador
         </video>
 
@@ -120,8 +136,7 @@
     <hr color=#ffffff>
     <section id="s1"></section>
     <hr color=#ffffff>
-    <section id="info" data-aos="fade-right"
-                       data-aos-duration="1500">
+    <section id="info">
         <div id="info_cont">
                     <h2>Informacion</h2>
         <h3>Nails Room es el mejor destino para servicios de uñas. Estamos dedicados a traer los mejores productos
@@ -132,8 +147,7 @@
     <hr color=#ffffff>
     <section id="s2"></section>
     <hr color=#ffffff>
-    <section id="serv" data-aos="fade-left"
-                       data-aos-duration="1500">
+    <section id="serv">
         <h2>Servicios</h2>
         <div>
             <a href="Servicios.html">
@@ -163,18 +177,16 @@
     <hr color=#ffffff>
     <section id="s3"></section>
     <hr color=#ffffff>
-    <section id="gale" data-aos="fade-right"
-                       data-aos-duration="1500">
+    <section id="gale">
         <div id="gale_cont">
-            <h2>Galeria</h2>
+                      <h2>Galeria</h2>
             <a href="Galeria.html">Mostrar galeria</a>
         </div>
     </section>
     <hr color=#ffffff>
     <section id="s4"></section>
     <hr color=#ffffff>
-    <section id="cont" data-aos="fade-left"
-                       data-aos-duration="1500">
+    <section id="cont">
         <div id="cont_cont">
             <h2>Contactenos!</h2>
             <h3>Envianos Watsapp</h3>
@@ -206,12 +218,6 @@
         <a href="#"><i class="fa-solid fa-code"></i> Developed by "Osmar Sifuentes".</a>
     </footer>
 
-    <script src="js/Carga.js"></script>
-    <script src="js/Playvid.js"></script>
-    <script src="js/Modal1.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
