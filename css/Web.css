@@ -664,6 +664,20 @@ footer {
 #modal1 #ag_info div input:focus {
   color: #861720;
 }
+#modal1 #ag_info div select {
+  background-color: #ffffff;
+  margin: auto;
+  font-size: large;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 1vh;
+  color: #ffdcdc;
+  border: 3px solid #ffdcdc;
+  border-radius: 2vw;
+}
+#modal1 #ag_info div select:focus {
+  color: #861720;
+}
 #modal1 #paypal-button {
   width: 80%;
   height: 20vh;
@@ -856,6 +870,12 @@ footer a {
     margin: 1vw;
   }
   #modal1 #ag_info div input {
+    margin: auto;
+    font-size: large;
+    width: 70%;
+    margin-bottom: 1vh;
+  }
+  #modal1 #ag_info div select {
     margin: auto;
     font-size: large;
     width: 70%;

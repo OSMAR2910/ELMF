@@ -51,6 +51,20 @@
             input:focus {
                 color: $Rojo;
             }
+            select {
+                background-color: $Blanco;
+                margin: auto;
+                font-size: large;
+                width: 70%;
+                text-align: center;
+                margin-bottom: 1vh;
+                color: $Rosa;
+                border: 3px solid $Primario;
+                border-radius: 2vw;
+            }
+            select:focus {
+                color: $Rojo;
+            }
         }
     }
     #paypal-button {
@@ -233,6 +247,12 @@ footer {
             margin: 1vw;
 
             input {
+                margin: auto;
+                font-size: large;
+                width: 70%;
+                margin-bottom: 1vh;
+            }
+            select {
                 margin: auto;
                 font-size: large;
                 width: 70%;
