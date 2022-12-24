@@ -25,10 +25,10 @@
     margin-left: -300vw;
   }
   50% {
-    margin-left: 6vw;
+    margin-left: 15vw;
   }
   100% {
-    margin-left: 0vw;
+    margin-left: 6.7vw;
   }
 }
 @keyframes ag_info_input {
@@ -36,10 +36,10 @@
     margin-left: -300vw;
   }
   50% {
-    margin-left: 6vw;
+    margin-left: 15vw;
   }
   100% {
-    margin-left: 0vw;
+    margin-left: 6.7vw;
   }
 }
 @-webkit-keyframes modal1_h1 {
@@ -128,6 +128,30 @@
   }
   100% {
     transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 500px) {
+  @-webkit-keyframes ag_info_input {
+    0% {
+      margin-left: -300vw;
+    }
+    50% {
+      margin-left: 6vw;
+    }
+    100% {
+      margin-left: 0vw;
+    }
+  }
+  @keyframes ag_info_input {
+    0% {
+      margin-left: -300vw;
+    }
+    50% {
+      margin-left: 6vw;
+    }
+    100% {
+      margin-left: 0vw;
+    }
   }
 }
 #info {
@@ -232,10 +256,10 @@
     margin-left: -300vw;
   }
   50% {
-    margin-left: 6vw;
+    margin-left: 15vw;
   }
   100% {
-    margin-left: 0vw;
+    margin-left: 6.7vw;
   }
 }
 @keyframes modal1_h1 {
@@ -280,6 +304,30 @@
   }
   100% {
     transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 500px) {
+  @-webkit-keyframes ag_info_input {
+    0% {
+      margin-left: -300vw;
+    }
+    50% {
+      margin-left: 6vw;
+    }
+    100% {
+      margin-left: 0vw;
+    }
+  }
+  @keyframes ag_info_input {
+    0% {
+      margin-left: -300vw;
+    }
+    50% {
+      margin-left: 6vw;
+    }
+    100% {
+      margin-left: 0vw;
+    }
   }
 }
 #info {
@@ -417,7 +465,7 @@ footer {
     margin-top: 5vh;
   }
   nav {
-    margin-top: -41.5vh;
+    margin-top: -42vh;
   }
 }
 /*Colores*/
@@ -497,7 +545,7 @@ footer {
 }
 @media screen and (max-height: 650px) {
   #BP {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
   #BP button {
     width: 16vw;
