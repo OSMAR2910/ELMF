@@ -375,7 +375,7 @@
 }
 
 * {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Aboreto", cursive;
 }
 
 html {
@@ -420,7 +420,7 @@ nav a {
   font-size: 1vw;
   text-decoration: none;
   color: #ffffff;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Aboreto", cursive;
 }
 
 footer {
@@ -432,7 +432,7 @@ footer {
 
 @media screen and (max-width: 500px) {
   * {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Aboreto", cursive;
   }
   html {
     background-color: #ffdcdc;
@@ -446,12 +446,12 @@ footer {
   }
   nav {
     width: 90%;
-    margin-top: -33.5vh;
+    margin-top: -33vh;
     padding: 3.5vw;
   }
   nav a {
-    font-size: 3.5vw;
-    font-family: "Nunito Sans", sans-serif;
+    font-size: 2.7vw;
+    font-family: "Aboreto", cursive;
   }
   footer {
     text-align: center;
