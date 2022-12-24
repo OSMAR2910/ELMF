@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="img/Iconos/Logo1.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/Web.css">
+    <meta name="theme-color" content="#ffdcdc">
+    <meta name="msapplication-navbutton-color" content="#ffdcdc">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffdcdc">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/15d60a6cf6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Contrail+One&family=Libre+Barcode+39&family=Nabla&family=Sniglet&display=swap" 
+    rel="stylesheet">
+    <title>Nails Room</title>
+</head>
+<body>
+    <!--Posision flex-->
+    <section id="logo_load">
+            <div id="cargando">
+                    <div id="circulo">
+                        <img src="img/Iconos/Logo.png">
+                    </div>
+            </div>
+    </section>
+    <audio id="aud" autobuffer="true" autoplay="true" playsinline="true" loop="true">
+        <source src="temas/diciembre/diciembre.mp3">
+    </audio>
+    <section id="F"></section>
+    <section id="BP">
+        <button onclick="playPause()"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
+    </section>
+    <section id="ag">
+        <button id="button_ag_abrir"><img src="img/Iconos/agenda.png" alt="img" width="70vw"></button>
+        <br>
+        <b>Agendar cita</b>
+    </section>    
+    <!--Modal-->
+    <dialog id="modal1">
+        <button id="button_ag_cerrar"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Completa el formulario y paga la cita.</h1>
+        <h3>Asegurate de que tu correo esté correcto, si no tu cita no se podrá verificar.</h3>
+
+        <div id="ag_info">
+            <div>
+                <i class="fa-solid fa-calendar-days"></i>
+                <input type="date" class="date" id="fecha" name="fecha" min="2022-11-01" max="2026-01-01">
+            </div>
+            <div>
+                <i class="fa-solid fa-hourglass-start"></i>
+                <input type="time" class="date" id="hora" name="hora" autocomplete="time" placeholder="Hora">
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <input type="name" class="date" id="nombre" name="nombre" autocomplete="name" placeholder="Nombre">
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" class="date" id="email" name="email" autocomplete="email" placeholder="Email">
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" class="date" id="telefono" name="telefono" autocomplete="tel" placeholder="Telefono">
+            </div>
+            <div>
+                <i class="fa-solid fa-bell-concierge"></i>
+                <select class="date" name="servicios">
+                    <option disabled selected>-Selecionar-</option>
+                    <option>Uñas acrilicas</option>
+                    <option>Pestañas 1x1</option>
+                    <option>Pedicure o Manicure</option>
+                </select>
+            </div>
+        </div>
+            <script
+                 src="https://www.paypal.com/sdk/js?client-id=AYiW0Cn6YmWe27hAxo-yxoO5NR3EjZd8xqGNWvate4HKjtJV6ONZx6GXCchv9Os7r_6hK5fCfrIZuPGh&currency=MXN">
+            </script>
+        <div id="paypal-button">
+            <script>
+            paypal.Buttons({
+                style: {
+                    color: "blue",
+                    shape: "pill",
+                    label: "pay",
+                },
+                createOrder: (data, actions) => {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: "150"
+                            }
+                        }]
+                    });
+                },
+                onCancel: (data, actions) => {
+                    alert("Tu pago se ha cancelado");
+                    window.location = "Web.html";
+                    console.log(data);
+                },
+
+                onApprove: (data, actions) => {
+                    return actions.order.capture().then(function(orderData) {
+                        console.log('Capture result', orderData, JSON.stringify(orderData, null,
+                        2));
+                        const transaction = orderData.purchase_units[0].payments.captures[0];
+                        window.location = "Citalista.html";
+                    });
+                }
+            }).render('#paypal-button');
+            </script>
+        </div>
+    </dialog>
+    <!-Contenido-->
+    <section id="in"></section>
+    <main>
+        <a href="Web.html"><img src="img/Iconos/Logo.png" width="170vw"></a>
+    </main>
+
+    <nav>
+        <a href="#in">Inicio</a>
+        <a href="#s1">Informacion</a>
+        <a href="#s2">Servicios</a>
+        <a href="#s3">Galeria</a>
+        <a href="#s4">Contactos</a>
+    </nav>
+    <hr color=#ffffff>
+    <section id="int">
+
+        <video id="vid" autobuffer="true" autoplay="true" playsinline="true" muted="true" loop="true">
+            <source src="temas/diciembre/vid.webm">
+            <source src="temas/diciembre/vid.mp4">
+            Este video no es compatible con su navegador
+        </video>
+
+        <img src="img/Iconos/NR.png">
+
+    </section>
+    <hr color=#ffffff>
+    <section id="s1"></section>
+    <hr color=#ffffff>
+    <section id="info">
+        <div id="info_cont">
+                    <h2><i class="fa-solid fa-circle-info"></i> Informacion</h2>
+        <h3>Nails Room es el mejor destino para servicios de uñas. Estamos dedicados a traer los mejores productos
+            combinados con técnicas EXPERTAS.
+            Nuestras especialidades incluyen Uñas, Pedicura, Manicura, Pestañas,...</h3>
+        </div>
+    </section>
+    <hr color=#ffffff>
+    <section id="s2"></section>
+    <hr color=#ffffff>
+    <section id="serv">
+        <h2><i class="fa-solid fa-bell-concierge"></i> Servicios</h2>
+        <div>
+            <a href="Servicios.html">
+                <img src="img/Servicios/uñas.jpeg" alt="Servicios">
+                <h3>Uñas Acrilicas</h3>
+            </a>
+        </div>
+        <div>
+            <a href="Servicios.html">
+                <img src="img/Servicios/pestañas.jpeg" alt="Servicios">
+                <h3>Pestañas 1x1</h3>
+            </a>
+        </div>
+        <div>
+            <a href="Servicios.html">
+                <img src="img/Servicios/pedicura.jpeg" alt="Servicios">
+                <h3>Manicure y Pedicure</h3>
+            </a>
+        </div>
+        <div>
+            <a href="Servicios.html">
+                <img src="img/Servicios/extras.jpeg" alt="Servicios">
+                <h3>Extras</h3>
+            </a>
+        </div>
+    </section>
+    <hr color=#ffffff>
+    <section id="s3"></section>
+    <hr color=#ffffff>
+    <section id="gale">
+        <div id="gale_cont">
+                      <h2><i class="fa-solid fa-images"></i> Galeria</h2>
+            <a href="Galeria.html">Mostrar galeria</a>
+        </div>
+    </section>
+    <hr color=#ffffff>
+    <section id="s4"></section>
+    <hr color=#ffffff>
+    <section id="cont">
+        <div id="cont_cont">
+            <h2><i class="fa-solid fa-address-card"></i> Contactenos!</h2>
+            <h3>Envianos Watsapp</h3>
+            <div class="wa"><a href="https://wa.me/526643665481" target="_blank"><img src="img/Iconos/boton wa.png"
+                        width="300vw"></a></div>
+            <h3>o llamanos</h3>
+            <a href="tel:664-366-5481"><i class="fa-solid fa-phone"></i> 664-366-5481</a>
+        </div>
+    </section>
+    <hr color=#ffffff>
+    <section id="s4"></section>
+
+    <section id="redes">
+        <hr color=#ffffff>
+        <a class="hr" target="_blank" href="arch/Nails_Room.apk"><i class="fa-brands fa-android"></i></a>
+        <a class="hr" target="_blank" href="https://www.facebook.com/people/Elegance-lashes-nails/100083253345131/"><i class="fa-brands fa-facebook"></i></a>
+        <a class="hr" target="_blank" href="https://www.instagram.com/mara_flores27/?igshid=ZDdkNTZiNTM%3D"><i class="fa-brands fa-instagram"></i></a>
+        <a class="hr" target="_blank" href="https://goo.gl/maps/rVZHmpvjDZGhfiE9A"><i class="fa-solid fa-location-dot"></i></a>
+        <a class="hr" target="_blank" href="arch/Nails Room.webarchive"><i class="fa-brands fa-apple"></i></a>
+        <hr color=#ffffff>
+    </section>
+
+    <footer>
+        <a href="#"><i class="fa-solid fa-code"></i> Developed by "Osmar Sifuentes".</a>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
