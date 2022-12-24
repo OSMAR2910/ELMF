@@ -1,3 +1,2 @@
 # Nails Room
-Esta web tiene la base de codigo echa por "Osmar", es una interfaz sencilla, rapida e interactiva.
-Para mas informacion sobre el desarrollador precione aqui: developerosmar.netlify.app
+Esta web tiene la base de código echa por "Osmar", es una interfaz sencilla, rápida e interactiva. Para más información sobre el desarrollador presione aquí: developerosmar.netlify.app
