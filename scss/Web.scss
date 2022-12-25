@@ -212,7 +212,7 @@
     #cont_cont {
         width: 100%;
         position: absolute;
-        top: 10%;
+        top: 5%;
         left: -1%;
         text-align: center;
     }
@@ -229,8 +229,8 @@
     text-align: center;
     background-color: #ffffff49;
     a {
-        margin: 0 2.5vw;
-        font-size: 5vw;
+        margin: 0 2vw;
+        font-size: 4vw;
         color: $Blanco;
         text-decoration: none;
     }
@@ -340,9 +340,15 @@ footer {
     }
     }
     #cont {
-        font-size: larger;
+    height: 35rem;
+
+    #cont_cont {
+        top: 20%;
+        left: -1%;
+    }
     .wa img {
         width: 60%;
+        border-radius: 10vw;
     }
     }
     #redes {
