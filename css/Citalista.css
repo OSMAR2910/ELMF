@@ -424,10 +424,12 @@ nav a {
 }
 
 footer {
-  margin-top: 6vh;
-  margin-bottom: 6vh;
-  color: #ffffff;
   text-align: center;
+  margin: 6vh 0;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {
@@ -454,6 +456,7 @@ footer {
     font-family: "Aboreto", cursive;
   }
   footer {
+    text-decoration: none;
     text-align: center;
     margin-top: 6vh;
     margin-bottom: 6vh;

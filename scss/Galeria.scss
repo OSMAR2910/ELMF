@@ -5,45 +5,24 @@
 @import "playvid";
 
 #galeria {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 1rem;
-    background-color: $Secundario;
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(7,1fr);
-
-    img {
-        width: 100%;
+    margin: 0 1.5vw;
+    .img {
+        margin: 0 0.5vw;
     }
-}
-footer {
-    text-align: center;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
-    a {
-        color: $Blanco;
-        text-decoration: none;
+    h3 {
+        font-size: larger;
+    }
+    p {
+        font-size: medium;
     }
 }
 @media screen and (max-width: 500px) {
-    #int {
-        height: 50vh;
-
-        img {
-            width: 40vw;
-        }
-    }
     #galeria {
-        margin: 2.5vw;
-        background-color: $Secundario;
-        padding: 3vw;
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-
-        img {
-            width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        .img {
+            margin: 0 1vw;
         }
     }
 }

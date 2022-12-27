@@ -424,10 +424,12 @@ nav a {
 }
 
 footer {
-  margin-top: 6vh;
-  margin-bottom: 6vh;
-  color: #ffffff;
   text-align: center;
+  margin: 6vh 0;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {
@@ -454,6 +456,7 @@ footer {
     font-family: "Aboreto", cursive;
   }
   footer {
+    text-decoration: none;
     text-align: center;
     margin-top: 6vh;
     margin-bottom: 6vh;
@@ -553,44 +556,25 @@ footer {
   }
 }
 #galeria {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 1rem;
-  background-color: #ffc3c3;
-  text-align: center;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  margin: 0 1.5vw;
 }
-#galeria img {
-  width: 100%;
+#galeria .img {
+  margin: 0 0.5vw;
 }
-
-footer {
-  text-align: center;
-  margin-top: 6vh;
-  margin-bottom: 6vh;
+#galeria h3 {
+  font-size: larger;
 }
-footer a {
-  color: #ffffff;
-  text-decoration: none;
+#galeria p {
+  font-size: medium;
 }
 
 @media screen and (max-width: 500px) {
-  #int {
-    height: 50vh;
-  }
-  #int img {
-    width: 40vw;
-  }
   #galeria {
-    margin: 2.5vw;
-    background-color: #ffc3c3;
-    padding: 3vw;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  #galeria img {
-    width: 100%;
+  #galeria .img {
+    margin: 0 1vw;
   }
 }/*# sourceMappingURL=Galeria.css.map */
