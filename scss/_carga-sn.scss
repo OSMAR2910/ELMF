@@ -1,0 +1,11 @@
+@import "variables";
+
+    #logo_load{
+        margin-top: -15vh;
+    }
+    @media screen and (max-width: 500px){
+    #logo_load{
+        margin-top: -10vh;
+        margin-left: -2vw;
+    }
+    }
