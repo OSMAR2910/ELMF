@@ -45,18 +45,120 @@
     <section id="BP">
         <button onclick="playPause()"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></button>
     </section>
-    
+    <section id="ag">
+        <button id="button_ag_abrir"><img src="img/Iconos/agenda.png" alt="img" width="70vw"></button>
+        <br>
+        <b>Agendar cita</b>
+    </section>    
+    <!--Modal-->
+    <dialog id="modal1">
+        <button id="button_ag_cerrar"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Completa el formulario y paga la cita.</h1>
+        <h3>Asegurate de que tu correo esté correcto, si no tu cita no se podrá verificar.</h3>
+
+        <div id="ag_info">
+            <div>
+                <i class="fa-solid fa-calendar-days"></i>
+                <input type="date" class="date" id="fecha" name="fecha" min="2022-11-01" max="2026-01-01">
+            </div>
+            <div>
+                <i class="fa-solid fa-hourglass-start"></i>
+                <input type="time" class="date" id="hora" name="hora" autocomplete="time" placeholder="Hora">
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <input type="name" class="date" id="nombre" name="nombre" autocomplete="name" placeholder="Nombre">
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" class="date" id="email" name="email" autocomplete="email" placeholder="Email">
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" class="date" id="telefono" name="telefono" autocomplete="tel" placeholder="Telefono">
+            </div>
+            <div>
+                <i class="fa-solid fa-bell-concierge"></i>
+                <select class="date" name="servicios">
+                    <option disabled selected>-Selecionar-</option>
+                    <option>Uñas acrilicas</option>
+                    <option>Pestañas 1x1</option>
+                    <option>Pedicure o Manicure</option>
+                </select>
+            </div>
+        </div>
+            <script
+                 src="https://www.paypal.com/sdk/js?client-id=AYiW0Cn6YmWe27hAxo-yxoO5NR3EjZd8xqGNWvate4HKjtJV6ONZx6GXCchv9Os7r_6hK5fCfrIZuPGh&currency=MXN">
+            </script>
+        <div id="paypal-button">
+            <script>
+            paypal.Buttons({
+                style: {
+                    color: "blue",
+                    shape: "pill",
+                    label: "pay",
+                },
+                createOrder: (data, actions) => {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: "150"
+                            }
+                        }]
+                    });
+                },
+                onCancel: (data, actions) => {
+                    alert("Tu pago se ha cancelado");
+                    window.location = "Web.html";
+                    console.log(data);
+                },
+
+                onApprove: (data, actions) => {
+                    return actions.order.capture().then(function(orderData) {
+                        console.log('Capture result', orderData, JSON.stringify(orderData, null,
+                        2));
+                        const transaction = orderData.purchase_units[0].payments.captures[0];
+                        window.location = "Citalista.html";
+                    });
+                }
+            }).render('#paypal-button');
+            </script>
+        </div>
+    </dialog>
     <section id="in"></section>
-    <main>
-        <a href="Web.html"><img src="img/Iconos/Logo.png" width="170vw"></a>
-    </main>
-    <nav>
-        <a href="Web.html">Inicio</a>
-        <a href="Web.html#s1">Informacion</a>
-        <a href="Web.html#s2">Servicios</a>
-        <a href="Web.html#s3">Galeria</a>
-        <a href="Web.html#s4">Contactos</a>
-    </nav>
+    <div id="a_icon"><a href="Web.html"><img src="img/Iconos/Logo.png" alt="img"></a></div>
+    <header id="header">
+            
+        <ul>
+            <nav>
+                <li>
+                    <a href="Web.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Web.html#s1">
+                        <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Web.html#s2">
+                        <span class="icon"><ion-icon name="bag-check-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Web.html#s3">
+                        <span class="icon"><ion-icon name="images-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Web.html#s4">
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                    </a>
+                </li>
+            </nav>
+        </ul>
+    </header>
     <hr color=#ffffff>
     <section id="galeria">
 <!--Uñas-->
@@ -3074,6 +3176,8 @@
         <a href="#"><i class="fa-solid fa-code"></i> Developed by "Osmar Sifuentes".</a>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="js/funciones.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

@@ -4,33 +4,6 @@ window.onload = function () {
     contenedor.style.visibility = 'hidden';
     contenedor.style.opacity = '0';
 }
-//Aniscroll
-const info = document.getElementById("info");
-const serv = document.getElementById("serv");
-const gale = document.getElementById("gale");
-const cont = document.getElementById("cont");
-
-const cargarImagen = (entradas, observador) => {
-
-    entradas.forEach((entrada) => {
-        if (entrada.isIntersecting){
-            entrada.target.classList.add('visible');
-        } else {
-            entrada.target.classList.remove('visible');
-        }
-    });
-}
-
-const observador  = new IntersectionObserver(cargarImagen, {
-    root: null,
-    rootMargin: '400px 0px 300px 0px',
-    threshold: 1.0
-});
-
-observador.observe(info);
-observador.observe(serv);
-observador.observe(gale);
-observador.observe(cont);
 //Aniscroll nav
 window.addEventListener("scroll", function(){
     var a_icon = document.querySelector("#a_icon");

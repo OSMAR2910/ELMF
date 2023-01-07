@@ -214,27 +214,27 @@
   display: block;
 }
 #logo_load #cargando #circulo {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   -webkit-animation: load 3s ease-in-out infinite;
           animation: load 3s ease-in-out infinite;
   border-radius: 100%;
   border: 0.8rem dotted #ffffff;
 }
 #logo_load #cargando #circulo img {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 @media screen and (max-width: 500px) {
   #logo_load #cargando #circulo {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border: 0.5rem dotted #ffffff;
   }
   #logo_load #cargando #circulo img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
   }
 }
 /*General*/ /*Colores*/
@@ -376,99 +376,130 @@
 
 * {
   font-family: "Aboreto", cursive;
+  scroll-behavior: smooth;
+  scroll-margin-top: 10vh;
 }
 
-html {
+body {
   background-color: #ffdcdc;
 }
-
-#in {
-  height: 10vh;
+body #in {
+  height: 45vh;
 }
-
-main img {
-  width: 15vw;
-  display: block;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  margin-left: auto;
-  margin-right: auto;
+body #a_icon {
+  width: 100vw;
+  margin-top: -40vh;
+  position: fixed;
+  display: flex;
+  z-index: 100;
+}
+body #a_icon a {
+  display: flex;
+  margin: auto;
+}
+body #a_icon a img {
+  width: 55%;
+  margin: auto;
+  border: 3px solid #ffffff;
   border-radius: 100%;
-  border: 0.3rem solid #ffffff;
-  box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.62);
+  transition: all 0.5s;
   -webkit-animation: logo_palpitar 3.5s ease-in-out infinite, logo 1.5s 1;
           animation: logo_palpitar 3.5s ease-in-out infinite, logo 1.5s 1;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-
-nav {
-  width: 95%;
-  display: flex;
-  margin-left: 1.5vw;
-  margin-right: 2.5vw;
-  border-color: #ffdcdc;
-  margin-top: -49vh;
-  position: fixed;
-  box-shadow: 0px 0px 70px 0px rgb(255, 255, 255);
-  padding: 1vw;
-  background-color: rgba(255, 195, 195, 0.862745098);
-  justify-content: space-evenly;
-  z-index: 150;
+body #a_icon.abajo {
+  margin-top: -43vh;
 }
-nav a {
-  font-size: 1vw;
+body #a_icon.abajo a img {
+  width: 35%;
+}
+body #header {
+  background-color: #ffc3c3;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  position: fixed;
+  margin-top: 47vh;
+  z-index: 100;
+}
+body #header ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+body #header ul nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+body #header ul nav li {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #header ul nav li a {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Aboreto", cursive;
 }
-
-footer {
+body #header ul nav li a .icon {
+  font-size: 200%;
+  transition: all 0.2s;
+}
+body #header ul nav li:hover a .icon {
+  font-size: 250%;
+}
+body footer {
   text-align: center;
-  margin: 6vh 0;
+  margin: 6vh 0 10vh 0;
 }
-footer a {
+body footer a {
   color: #ffffff;
   text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {
   * {
-    font-family: "Aboreto", cursive;
+    scroll-margin-top: 5vh;
   }
-  html {
-    background-color: #ffdcdc;
+  body #in {
+    height: 25vh;
   }
-  main img {
-    width: 40vw;
-    margin-top: 0vw;
-    padding: 0.1rem;
+  body #a_icon {
+    margin-top: -23vh;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    z-index: 100;
+  }
+  body #a_icon a {
+    display: flex;
+    margin: auto;
+  }
+  body #a_icon a img {
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid #ffffff;
     border-radius: 100%;
-    border: 0.2rem solid #ffffff;
+    transition: all 0.5s;
+    -webkit-animation: logo_palpitar 3.5s ease-in-out infinite, logo 1.5s 1;
+            animation: logo_palpitar 3.5s ease-in-out infinite, logo 1.5s 1;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
   }
-  nav {
-    width: 90%;
-    margin-top: -33vh;
-    padding: 3.5vw;
+  body #a_icon.abajo {
+    margin-top: -23vh;
   }
-  nav a {
-    font-size: 2.7vw;
-    font-family: "Aboreto", cursive;
+  body #a_icon.abajo a img {
+    width: 7rem;
+    height: 7rem;
   }
-  footer {
-    text-decoration: none;
-    text-align: center;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
-    color: #ffffff;
-  }
-}
-@media screen and (max-height: 650px) {
-  main img {
-    margin-top: 5vh;
-  }
-  nav {
-    margin-top: -42vh;
+  body #header {
+    margin-top: 67vh;
   }
 }
 /*Colores*/
@@ -512,41 +543,233 @@ footer a {
 /*Colores*/
 /*Tipos de letra*/
 /*Fondos*/
-#BP {
-  margin-top: 15vh;
-  margin-left: 90vw;
+/*Modal*/
+#modal1 {
+  width: 45vw;
+  height: 60vh;
+  background-color: #ffc3c3;
+  border: 0;
+  border-radius: 1.5rem;
+}
+#modal1 h1 {
+  width: 100%;
+  -webkit-animation: modal1_h1 1.5s 1;
+          animation: modal1_h1 1.5s 1;
+  text-align: center;
+  font-size: large;
+  color: #ffffff;
+  margin-top: 4vh;
+}
+#modal1 h3 {
+  width: 100%;
+  -webkit-animation: modal1_h1 1.5s 1;
+          animation: modal1_h1 1.5s 1;
+  text-align: center;
+  font-size: small;
+  color: #ffffff;
+  margin-bottom: 3vh;
+}
+#modal1 #ag_info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  -webkit-animation: ag_info_input 1.5s 1;
+          animation: ag_info_input 1.5s 1;
+}
+#modal1 #ag_info div {
+  width: 10vw;
+  font-size: large;
+  text-align: center;
+  padding-top: 1vh;
+  margin: 0.5vw;
+  border-radius: 1rem;
+  color: #ffffff;
+  background-color: #ffdcdc;
+}
+#modal1 #ag_info div .date {
+  background-color: #ffffff;
+  color: #ffc3c3;
+  margin: auto;
+  font-size: large;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 1vh;
+  border: 3px solid #ffdcdc;
+  border-radius: 2vw;
+}
+#modal1 #ag_info div .date::-moz-placeholder {
+  color: #ffc3c3;
+}
+#modal1 #ag_info div .date:-ms-input-placeholder {
+  color: #ffc3c3;
+}
+#modal1 #ag_info div .date::placeholder {
+  color: #ffc3c3;
+}
+#modal1 #ag_info div .date::-moz-placeholder:focus {
+  color: #861720;
+}
+#modal1 #ag_info div .date:-ms-input-placeholder:focus {
+  color: #861720;
+}
+#modal1 #ag_info div .date::placeholder:focus {
+  color: #861720;
+}
+#modal1 #ag_info div .date:focus {
+  color: #861720;
+}
+#modal1 #paypal-button {
+  width: 80%;
+  height: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+}
+#modal1 button {
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  margin-top: -6px;
+  margin-left: -6px;
   position: fixed;
+  border-radius: 100%;
+  font-size: 100%;
+  background-color: #ffdcdc;
+  border: 0;
+}
+
+#modal1::-webkit-backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#modal1::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*Fixed*/
+#ag {
+  position: fixed;
+  margin: 15vh 2vw;
+  text-align: center;
+  font-size: 0.5rem;
+  color: #ffffff;
+  transition: all 0.5s;
+  z-index: 150;
+}
+#ag button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+}
+#ag button img {
+  width: 5rem;
+}
+
+#BP {
+  margin: 15vh 90vw;
+  position: fixed;
+  transition: all 0.5s;
   z-index: 150;
 }
 #BP button {
   width: 5rem;
   height: 5rem;
-  box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.62);
   color: #ffffff;
   font-size: 100%;
   border-radius: 1rem;
-  border: 0;
+  border: 1px solid #ffffff;
   background-color: #ffc3c3;
   transition: all 0.5s;
 }
-#BP button:hover {
+#BP button:active {
   background-color: #ffdcdc;
 }
 
+#ag.abajo {
+  margin: 7vh 2vw;
+}
+
+#BP.abajo {
+  margin: 7vh 90vw;
+}
+
 @media screen and (max-width: 500px) {
+  #modal1 {
+    width: 85vw;
+    height: 50vh;
+  }
+  #modal1 h1 {
+    font-size: 0.9rem;
+  }
+  #modal1 h3 {
+    font-size: 0.6rem;
+  }
+  #modal1 #ag_info {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #modal1 #ag_info div {
+    width: 40vw;
+    font-size: large;
+    margin: 1vw;
+  }
+  #modal1 #ag_info div .date {
+    margin: auto;
+    font-size: small;
+    width: 70%;
+    margin-bottom: 1vh;
+  }
+  #modal1 #ag_info div .date::-moz-placeholder {
+    font-size: small;
+  }
+  #modal1 #ag_info div .date:-ms-input-placeholder {
+    font-size: small;
+  }
+  #modal1 #ag_info div .date::placeholder {
+    font-size: small;
+  }
+  #modal1 #paypal-button {
+    width: 85%;
+    height: 25vh;
+    margin-top: 3vh;
+  }
+  #ag {
+    margin: 10vh 2vw;
+  }
+  #ag button img {
+    width: 3rem;
+  }
   #BP {
-    margin-top: 10vh;
-    margin-left: 80vw;
+    margin: 10vh 82vw;
   }
   #BP button {
-    width: 16vw;
-    height: 6vh;
+    width: 3.5rem;
+    height: 3.5rem;
   }
-  #BP button:active {
-    background-color: #ffdcdc;
+  #ag.abajo {
+    margin: 6vh 2vw;
+  }
+  #BP.abajo {
+    margin: 6vh 82vw;
   }
 }
 @media screen and (max-height: 650px) {
+  #modal1 {
+    height: 60vh;
+  }
+  #modal1 h1 {
+    font-size: 0.8rem;
+  }
+  #modal1 h3 {
+    font-size: 0.5rem;
+  }
+  #ag {
+    margin-top: 10vh;
+  }
   #BP {
     margin-top: 10vh;
   }

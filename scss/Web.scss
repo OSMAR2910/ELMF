@@ -4,112 +4,6 @@
 @import "fondo";
 @import "playvid";
 @import "animaciones";
-/*Modal*/
-#modal1 {
-    width: 45vw;
-    height: 60vh;
-    background-color: $Secundario;
-    border: 0;
-    border-radius: 1.5rem;
-
-    h1 {
-        width: 100%;
-        animation: modal1_h1 1.5s 1;
-        text-align: center;
-        font-size: large;
-        color: $Blanco;
-        margin-top: 4vh;
-    }
-    h3 {
-        width: 100%;
-        animation: modal1_h1 1.5s 1;
-        text-align: center;
-        font-size: small;
-        color: $Blanco;
-        margin-bottom: 3vh;
-    }
-    #ag_info {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        animation: ag_info_input 1.5s 1;
-
-        div {
-            width: 10vw;
-            font-size: large;
-            text-align: center;
-            padding-top: 1vh;
-            margin: 0.5vw;
-            border-radius: 1rem;
-            color: $Blanco;
-            background-color: $Primario;
-
-            .date {
-                background-color: $Blanco;
-                color: $Secundario;
-                margin: auto;
-                font-size: large;
-                width: 70%;
-                text-align: center;
-                margin-bottom: 1vh;
-                border: 3px solid $Primario;
-                border-radius: 2vw;
-            }
-            .date::placeholder {
-                color: $Secundario;
-            }
-            .date::placeholder:focus {
-                color: $Rojo;
-            }
-            .date:focus {
-                color: $Rojo;
-            }
-        }
-    }
-    #paypal-button {
-        width: 80%;
-        height: 20vh;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 3vh;
-    }
-    
-
-    button {
-        width: 2rem;
-        height: 2rem;
-        color: $Blanco;
-        margin-top: -6px;
-        margin-left: -6px;
-        position: fixed;
-        border-radius: 100%;
-        font-size: 100%;
-        background-color: $Primario;
-        border: 0;
-    }
-}
-#modal1::backdrop {
-    background-color:rgba(0, 0, 0, 0.700);
-}
-/*Fixed*/
-#ag {
-    position: fixed;
-    margin: 15vh 0 0 2vw;
-    text-align: center;
-    font-size: 0.7rem;
-    color: $Blanco;
-    z-index: 150;
-    button {
-        background-color: $Transparente;
-        border: 0; 
-        img {
-            width: 5rem;
-        }
-    }
-}
 /*Contenido*/
 #int {
     margin: 0 1rem;
@@ -191,6 +85,7 @@
         width: 100%;
         position: absolute;
         top: 25%;
+        left: 0%;
         text-align: center;
     }
     h2 {
@@ -246,68 +141,10 @@
         text-decoration: none;
     }
 }
-footer {
-    text-align: center;
-    margin: 6vh 0;
-    a {
-        color: $Blanco;
-        text-decoration: none;
-    }
-}
 #s1, #s2, #s3, #s4 {
     height: 10vh;
 }
 @media screen and (max-width: 500px) {
-    #modal1 {
-    width: 85vw;
-    height: 50vh;
-    
-    h1 {
-        font-size: 0.9rem;
-    }
-    h3 {
-        font-size: 0.6rem;
-    }
-    #ag_info {
-        grid-template-columns: repeat(2,1fr);
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        div {
-            width: 40vw;
-            font-size: large;
-            margin: 1vw;
-
-            .date {
-                margin: auto;
-                font-size: small;
-                width: 70%;
-                margin-bottom: 1vh;
-            }
-            .date::placeholder {
-                font-size: small;
-            }
-        }
-    }
-    #paypal-button {
-        width: 85%;
-        height: 25vh;
-        margin-top: 3vh;
-    }
-    }
-    #ag {
-        position: fixed;
-        margin-top: 10vh;
-        text-align: center;
-        font-size: 0.7rem;
-        button {
-            background-color: $Transparente;
-            border: 0; 
-            img {
-                width: 13vw;
-            }
-        }
-    }
     #int {
         height: 20rem;
 
@@ -383,7 +220,7 @@ footer {
     }
     #redes {
     a {
-        font-size: 12vw;
+        font-size: 10vw;
     }
     } 
     #s1, #s2, #s3, #s4 {
@@ -391,19 +228,6 @@ footer {
     }
 }
 @media screen and (max-height: 650px) {
-    #modal1 {
-        height: 60vh;
- 
-         h1 {
-             font-size: 0.8rem;
-         }
-         h3 {
-             font-size: 0.5rem;
-         }
-    }
-    #ag {
-        margin-top: 10vh;
-    }
     #int {
         height: 12rem;
         img {
